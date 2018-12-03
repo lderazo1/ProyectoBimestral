@@ -31,9 +31,8 @@ public abstract class PruebaGestion extends GestionFacultad {
             }
         };
 
-        try {
-            JOptionPane.showMessageDialog(null, "Bienvenido al programa");
-            do {
+        JOptionPane.showMessageDialog(null, "Bienvenido al programa");
+        do {
                 pedir = JOptionPane.showInputDialog(null, "Seleccione su Usuario\n1. Empleado\n2.Estudiante\n3.Profesor\n4.Salir");
                 switch (Integer.parseInt(pedir)) {
                     case 1: {
@@ -161,9 +160,6 @@ public abstract class PruebaGestion extends GestionFacultad {
 
                     }
                 }
-            } while (Integer.parseInt(pedir) != 4);
-        } catch (HeadlessException e) {
-            JOptionPane.showMessageDialog(null, "Error!");//Error
-        }
+         } while (Integer.parseInt(pedir) != 4);
     }
 }
